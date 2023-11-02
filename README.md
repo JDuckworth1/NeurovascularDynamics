@@ -2,7 +2,7 @@
 
 Extract time series data from widefield and two photon tif images and perform spectral calculations to study neural and vascular dynamics.
 
-Some files in this repository use functions from the [CHRONUX toolbox](http://chronux.org) and/or functions developed by Xiang Ji: [github](https://github.com/xiangjiph/VCRA)
+Some files in this repository use functions from the [chronux toolbox](http://chronux.org) and/or functions developed by Xiang Ji: [github](https://github.com/xiangjiph/VCRA)
 
 ## Wide-field
 Extract and save df/f (x,t) from tif images. Compute the peak vasomotor frequency, preform space-frequency SVD, and plot the dominant mode's magnitude and phase. Extract phase at each location along the vasculature, calculate phase gradients and traveling wave properties.
