@@ -1,6 +1,6 @@
 # NeurovascularDynamics
 
-Code for processing wide-field and two photon imaging data. Extract time series data from widefield and two photon tif images and perform spectral calculations to study neural and vascular dynamics.
+Extract time series data from widefield and two photon tif images and perform spectral calculations to study neural and vascular dynamics.
 
 Some files in this repository use functions from the [CHRONUX toolbox](http://chronux.org) and/or functions developed by Xiang Ji: [github](https://github.com/xiangjiph/VCRA)
 
