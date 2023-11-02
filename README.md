@@ -11,7 +11,7 @@ Extract and save df/f (x,t) from tif images. Compute the peak vasomotor frequenc
 Process interleaved two photon frame scan tif images. Estimate cross sectional diameter using the [Threshold in Radon space method](https://journals.sagepub.com/doi/10.1038/jcbfm.2014.67), and perform spectral calculations on the resulting diameter time series. Calculate spectra, phase, and coherence for each trial and plot these results.
 
 ## Pial2P
-Process and analyze two photon frame scans with two simultaneous imaging channels: Cy5.5 and smooth muscle GCaMP8.1. Calculate GCaMP df/f(x,t), integrated Cy5.5 intensity(x,t), and lumen diameter(x,t) via Full-Width-(Scale factor)-Max. Analyze the relations between these signals using cross correlation and spectral methods.
+Process and analyze two photon frame scans with two simultaneous imaging channels: Cy5.5 and smooth muscle GCaMP. Calculate GCaMP df/f(x,t), integrated Cy5.5 intensity(x,t), and lumen diameter(x,t) via Full-Width-(Scale factor)-Max. Analyze the relations between these signals using cross correlation and spectral methods.
 
 ## RBCFlux
 Process two photon line scan images with two simultaneous imaging channels: Cy5.5 annd RBCs labeled with CellTrace CFSE. Detect and count RBCs, and calculate vessel diameter using FWHM. Compute flux and diameter as a function of time, and dFlux/dDiameter.
