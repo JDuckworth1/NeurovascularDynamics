@@ -271,8 +271,6 @@ if str == 'v'
     % document of fun_get_skeleton_neighbor_ind
     % Use the vessel graph functions (written by Xiang Ji)
 
-    addpath('\\dk-server.dk.ucsd.edu\jaduckwo\DataAnalysis\XianCode\XianCode')
-
     opt.downsample_rate = 2; %Downsample rate for skeleton pixels
     opt.imdilate_disk_r = 1; %Dilate skeleton pixels by this * local vessel radius
     opt.min_kept_cc_num_pixel = 35; % You would need a larger value for higher resolution image 35 for Prime wide-field imaging
