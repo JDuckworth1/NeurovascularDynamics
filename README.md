@@ -1,5 +1,5 @@
 # NeurovascularDynamics
-For the most up to date respository please navigate to [NeurovascularDynamics](https://github.com/JDuckworth1/NeurovascularDynamics). Please direct quesitons to Jacob Duckworth at jaduckwo@ucsd.edu. DOI: [![DOI](https://zenodo.org/badge/711011022.svg)](https://zenodo.org/doi/10.5281/zenodo.11041233)
+For the most up to date respository please navigate to [NeurovascularDynamics](https://github.com/JDuckworth1/NeurovascularDynamics). Please direct quesitons to Jacob Duckworth at jaduckwo@ucsd.edu. [![DOI](https://zenodo.org/badge/711011022.svg)](https://zenodo.org/doi/10.5281/zenodo.11041233)
 
 Some files in this repository use functions from the [chronux toolbox](http://chronux.org) and/or functions developed by Xiang Ji: [VCRA](https://github.com/xiangjiph/VCRA)
 
