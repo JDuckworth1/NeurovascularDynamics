@@ -20,4 +20,4 @@ Process two photon line scan images with two simultaneous imaging channels: Cy5.
 Helper functions for various calculations. Perform regression through the origin and calculate the associated uncertainty in slope. Perform [line subtraction](https://direct.mit.edu/neco/article/13/4/717/6503/Sampling-Properties-of-the-Spectrum-and-Coherency) to detect and remove sinusoidal components from complex timeseries data.
 
 ## VesGraph
-Functions required to compute the vessel graph (nodes and links) from the pial vasculature mask. Written by Xiang Ji: [github](https://github.com/xiangjiph/VCRA)
+Functions required to compute the vessel graph (nodes and links) from the pial vasculature mask. Written by Xiang Ji: [VCRA](https://github.com/xiangjiph/VCRA)
