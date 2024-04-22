@@ -1,5 +1,5 @@
 # NeurovascularDynamics
-For the most up to date respository please navigate to [NeurovascularDynamics](https://github.com/JDuckworth1/NeurovascularDynamics).
+For the most up to date respository please navigate to [NeurovascularDynamics](https://github.com/JDuckworth1/NeurovascularDynamics). Please direct quesitons to Jacob Duckworth at jaduckwo@ucsd.edu. 
 
 Extract time series data from widefield and two photon tif images and perform spectral calculations to study neural and vascular dynamics.
 
