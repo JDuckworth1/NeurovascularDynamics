@@ -162,7 +162,6 @@ classdef VRRBCFlux
             result_cell = cell(num_frame, 1);
             t_tic = tic;
              for i_frame = 1 : num_frame
-            %for i_frame = 10 : 15
                 result_cell{i_frame} = VRRBCFlux.single_frame_RBC_segmentation(...
                     rbc_im(:, :, i_frame), vsl_mask(:, :, i_frame), ...
                     est_bg_fraction, min_rbc_size, vis_Q);
