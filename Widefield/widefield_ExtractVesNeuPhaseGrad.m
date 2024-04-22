@@ -1589,7 +1589,6 @@ toc
 
 
 %% Analyze/filter/save results
-%MAKE FUNCTION fun_saveandplot.m
 for i=1:length(vsl_graph.link.cc_ind)
    max_vec(i) = max(link_results_struct(1).dist_mat(:,i)); 
    n_max_vec(i) = max(link_results_struct_neu(1).n_dist_mat(:,i));
