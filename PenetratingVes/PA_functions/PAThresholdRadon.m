@@ -1,6 +1,7 @@
 %PAThresholdRadon.m
 %Perform Radon transform and thresholding in Radon space using the process
-%developed by Drew et al.
+%developed by Drew et al. Code adapted from the CHIPS toolbox: https://github.com/EIN-lab/CHIPS/tree/master/%40CalcDiameterTiRS
+%(Barrett et al. 2018 Neuroinformatics)
 
 %Uses gpuArray for median filtering
 
