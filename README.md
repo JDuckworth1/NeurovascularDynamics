@@ -1,8 +1,6 @@
 # NeurovascularDynamics
 For the most up to date respository please navigate to [NeurovascularDynamics](https://github.com/JDuckworth1/NeurovascularDynamics). Please direct quesitons to Jacob Duckworth at jaduckwo@ucsd.edu. 
 
-Extract time series data from widefield and two photon tif images and perform spectral calculations to study neural and vascular dynamics.
-
 Some files in this repository use functions from the [chronux toolbox](http://chronux.org) and/or functions developed by Xiang Ji: [VCRA](https://github.com/xiangjiph/VCRA)
 
 ## Wide-field
