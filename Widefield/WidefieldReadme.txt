@@ -13,4 +13,5 @@ widefield_ExtractVesNeuPhaseGrad.m loads each trial's neuronal and vascular df/f
 the phase of each signal along each vessel. The phase gradient k is then calculated by fitting phase vs. distance along each vessel. Other
 calculations such as vessel-neuron coherence are also included.
 
-widefield_CombineVesNeuPhaseGrad.m combines results from widefield_ExtractVesNeuPhaseGrad.m across all animals, trials, and vessels. These combined results are then plotted as summary figures.
+widefield_CombineVesNeuPhaseGrad.m combines results from widefield_ExtractVesNeuPhaseGrad.m across all animals, trials, and vessels. These
+combined results are then plotted as summary figures.
