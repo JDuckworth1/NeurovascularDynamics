@@ -1,7 +1,7 @@
 
 
 % function [is_near_midline_Q] = Thomas_generate_hemisphere_mask(vsl_mask,vsl_im,neuron_mask)
-function [is_near_midline_Q,mix_gaussian_model] = Thomas_generate_hemisphere_mask(vsl_mask,vsl_im,neuron_mask)
+function [is_near_midline_Q,mix_gaussian_model,mix_1_mask_cvxh,mix_2_mask_cvxh] = Thomas_generate_hemisphere_mask(vsl_mask,vsl_im,neuron_mask)
 %% Parameters
 neuron_mask = neuron_mask.rim;
 % Remove connected components with less than 50 pixels (you might want to
@@ -56,34 +56,34 @@ prob_1 = mix_gaussian_model.posterior(cat(2, im_x(:), im_y(:)));
 is_near_midline_Q = abs(prob_1(:, 1) - 0.5) < midline_prob_half_width;
 is_near_midline_Q = reshape(is_near_midline_Q, mask_size);
 %% Visualization
-fig_hdl = figure;
-% fig_hdl.Position(3:4) = fig_hdl.Position(3:4) .* [2,2];
-ax_hdl = subplot(2,2,1);
-imagesc(ax_hdl, vsl_mask);
-% colormap('gray');
-ax_hdl.DataAspectRatio = [1,1,1];
-gmPDF = @(x,y) arrayfun(@(x0, y0) pdf(mix_gaussian_model, [x0, y0]), x, y);
-hold(ax_hdl, 'on');
-fc_hdl = fcontour(ax_hdl, gmPDF, [ax_hdl.XLim, ax_hdl.YLim]);
-fc_hdl.LineWidth = 2;
-ax_hdl.Title.String = 'Vessel mask with Gaussian mixture contour';
-
-ax_hdl_2 = subplot(2,2,2);
-imagesc(ax_hdl_2, vsl_im .* uint8(mix_1_mask_cvxh));
-colormap(ax_hdl_2, 'gray');
-ax_hdl_2.DataAspectRatio = [1,1,1];
-ax_hdl_2.Title.String = 'Masked image 1';
-
-ax_hdl_3 = subplot(2,2,3);
-imagesc(ax_hdl_3, vsl_im .* uint8(mix_2_mask_cvxh));
-colormap(ax_hdl_3, 'gray');
-ax_hdl_3.DataAspectRatio = [1,1,1];
-ax_hdl_3.Title.String = 'Masked image 2';
-
-ax_hdl_4 = subplot(2,2,4);
-% imagesc(ax_hdl_4, vsl_im .* uint8(is_near_midline_Q));
-imagesc(ax_hdl_4, vsl_im + uint8(is_near_midline_Q));
-colormap(ax_hdl_4, 'gray');
-ax_hdl_4.DataAspectRatio = [1,1,1];
-ax_hdl_4.Title.String = 'Mask for midline';
+% fig_hdl = figure;
+% % fig_hdl.Position(3:4) = fig_hdl.Position(3:4) .* [2,2];
+% ax_hdl = subplot(2,2,1);
+% imagesc(ax_hdl, vsl_mask);
+% % colormap('gray');
+% ax_hdl.DataAspectRatio = [1,1,1];
+% gmPDF = @(x,y) arrayfun(@(x0, y0) pdf(mix_gaussian_model, [x0, y0]), x, y);
+% hold(ax_hdl, 'on');
+% fc_hdl = fcontour(ax_hdl, gmPDF, [ax_hdl.XLim, ax_hdl.YLim]);
+% fc_hdl.LineWidth = 2;
+% ax_hdl.Title.String = 'Vessel mask with Gaussian mixture contour';
+% 
+% ax_hdl_2 = subplot(2,2,2);
+% imagesc(ax_hdl_2, vsl_im .* uint8(mix_1_mask_cvxh));
+% colormap(ax_hdl_2, 'gray');
+% ax_hdl_2.DataAspectRatio = [1,1,1];
+% ax_hdl_2.Title.String = 'Masked image 1';
+% 
+% ax_hdl_3 = subplot(2,2,3);
+% imagesc(ax_hdl_3, vsl_im .* uint8(mix_2_mask_cvxh));
+% colormap(ax_hdl_3, 'gray');
+% ax_hdl_3.DataAspectRatio = [1,1,1];
+% ax_hdl_3.Title.String = 'Masked image 2';
+% 
+% ax_hdl_4 = subplot(2,2,4);
+% % imagesc(ax_hdl_4, vsl_im .* uint8(is_near_midline_Q));
+% imagesc(ax_hdl_4, vsl_im + uint8(is_near_midline_Q));
+% colormap(ax_hdl_4, 'gray');
+% ax_hdl_4.DataAspectRatio = [1,1,1];
+% ax_hdl_4.Title.String = 'Mask for midline';
 end
